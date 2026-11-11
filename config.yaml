@@ -1,0 +1,147 @@
+# This is an example configuration file for the iDRAC exporter,
+# including default values and equivalent environment variables.
+# The environment variables take precedence over the values in
+# the configuration file.
+#
+# When using the CLI argument "--config-expand-env" you can
+# reference environment variables in the configuration file
+# using the syntax ${MY_VARIABLE} or $MY_VARIABLE
+
+# Listen address
+# Default value: 0.0.0.0
+# Environment variable CONFIG_ADDRESS=0.0.0.0
+address: 0.0.0.0
+
+# Listen port
+# Default value: 9348
+# Environment variable CONFIG_PORT=9348
+port: 9348
+
+# HTTP timeout in seconds for Redfish API calls
+# Default value: 10
+# Environment variable CONFIG_TIMEOUT=10
+timeout: 10
+
+# Maximum number of concurrent HTTP connections per host
+# Default value: 10
+# Environment variable CONFIG_CONCURRENCY=10
+concurrency: 10
+
+# Prefix for the exported metrics
+# Default value: idrac
+# Environment variable CONFIG_METRICS_PREFIX=idrac
+metrics_prefix: idrac
+
+# Enable the use of an https proxy for all requests
+# Environment variable: HTTPS_PROXY=http://localhost:8888
+#https_proxy: http://localhost:8888
+
+# The TLS section is used to enable HTTPS for the exporter. To enable TLS you
+# need a PEM encoded certificate and private key. The public certificate must
+# include the entire chain of trust.
+# TLS can also be configured using the corresponding environment variables.
+tls:
+  enabled: false  # CONFIG_TLS_ENABLED=false
+  cert_file: ""   # CONFIG_TLS_CERT_FILE=
+  key_file: ""    # CONFIG_TLS_KEY_FILE=
+
+# When setting this variable, the specified target will be used when the metrics
+# endpoint is called without the target parameter. Unset by default.
+# Environment variable: CONFIG_DEFAULT_TARGET=192.168.1.1
+default_target: "192.168.1.1"
+
+# The hosts section is used to define login credentials for the different targets.
+# Hosts can be referenced either via their IP address or their hostname, as long
+# as it matches the "target" parameter when scraping the metrics. Optionally you
+# can also specify a scheme (http or https) for accessing the Redfish API, which
+# automatically defaults to https. You can also specify a custom port if the server
+# is not using the default port (443 for https, 80 for http). When the "encoded"
+# variable is enabled, the username and password is assumed to be base64 encoded.
+#
+# The option "use_basic_auth" can be used to disable session authentication (which
+# is used by default) and always use HTTP basic auth. This is NOT recommended and
+# it should only be used if there is an actual reason.
+#
+# The "http" section contains advanced options for the HTTP client. These options
+# are rarely needed and they should only be enabled for targets that require it.
+# - The option "disable_keepalive" will disables HTTP keep-alive, such that every
+#   connection only serves a single request.
+# - The option "allow_legacy_rsa_kex" enables legacy RSA key exchange for TLS 1.2
+#   connections to devices that do not support modern ECDHE cipher suites. Only
+#   RSA cipher suites using AES-GCM are enabled.
+#
+# When the "target" parameter does not match any host, the exporter will attempt
+# to use the login credentials under "default". The credentials under "default"
+# can also be configured using environment variables, but this is not possible
+# for any of the other targets.
+#
+# For each host you can override the global "metrics" configuration below, in
+# case you want to scrape a different set of metrics on certain hosts.
+hosts:
+  default:
+    encoded: false        # CONFIG_DEFAULT_ENCODED=false
+    username: root        # CONFIG_DEFAULT_USERNAME=user
+    password: calvin        # CONFIG_DEFAULT_PASSWORD=pass
+    scheme: https         # CONFIG_DEFAULT_SCHEME=https
+    port: 443            # CONFIG_DEFAULT_PORT=8443
+    use_basic_auth: true  # CONFIG_DEFAULT_USE_BASIC_AUTH=true
+    #http:
+    #  allow_legacy_rsa_kex: false  # CONFIG_DEFAULT_HTTP_ALLOW_LEGACY_RSA_KEX=false
+    #  disable_keepalive: false     # CONFIG_DEFAULT_HTTP_DISABLE_KEEPALIVE=false
+
+# The groups section has the same structure as the hosts section. Here you can
+# define credentials for a group of hosts. When scraping a target you can
+# reference the group via the "group" query parameter. This is similar to what
+# the SNMP exporter does.
+groups:
+  mygroup:
+    username: user
+    password: pass
+
+# The metrics section is used to globally enable different groups of
+# metrics. You can override the global configuration for individual
+# hosts or groups, as shown in the example above.
+#
+# See the README file for a detailed list of metrics in each group.
+# Each section can also be enabled using the shown environment variable.
+# The group "all" overrides all other groups and enables all metrics.
+#
+# Events can be filtered based on minimum severity and maximum age.
+# Severity must be one of "ok", "warning", "critical"
+metrics:
+  all:
+    enabled: false       # CONFIG_METRICS_ALL_ENABLED=false
+  processors:
+    enabled: false       # CONFIG_METRICS_PROCESSORS_ENABLED=false
+  system:
+    enabled: false       # CONFIG_METRICS_SYSTEM_ENABLED=false
+  sensors:
+    enabled: false       # CONFIG_METRICS_SENSORS_ENABLED=false
+    unified: false       # CONFIG_METRICS_SENSORS_UNIFIED=false
+  power:
+    enabled: false       # CONFIG_METRICS_POWER_ENABLED=false
+  events:
+    enabled: false       # CONFIG_METRICS_EVENTS_ENABLED=false
+    severity: warning    # CONFIG_METRICS_EVENTS_SEVERITY=warning
+    maxage: 7d           # CONFIG_METRICS_EVENTS_MAXAGE=7d
+  storage:
+    enabled: false       # CONFIG_METRICS_STORAGE_ENABLED=false
+  memory:
+    enabled: false       # CONFIG_METRICS_MEMORY_ENABLED=false
+  network:
+    enabled: false       # CONFIG_METRICS_NETWORK_ENABLED=false
+  manager:
+    enabled: false       # CONFIG_METRICS_MANAGER_ENABLED=false
+    events:
+      enabled: false     # CONFIG_METRICS_MANAGER_EVENTS_ENABLED=false
+      severity: warning  # CONFIG_METRICS_MANAGER_EVENTS_SEVERITY=warning
+      maxage: 7d         # CONFIG_METRICS_MANAGER_EVENTS_MAXAGE=7d
+  extra:
+    enabled: false       # CONFIG_METRICS_EXTRA_ENABLED=false
+
+# The metric_reports section is used to specify individual metric reports to be collected.
+# The names of the metric reports can be found in the iDRAC documentation or from
+# /redfish/v1/TelemetryService/MetricReportDefinitions
+
+metric_reports:
+  - StorageDiskSMARTData
