@@ -14,3 +14,23 @@ scrape_configs:
   static_configs:
   - targets:
     - victoriametrics:8428
+# iDRAC exporter is a multi-target exporter: the actual iDRAC host is passed
+# via the "target" query parameter, while the scrape itself goes to the exporter.
+- job_name: idrac
+  metrics_path: /metrics
+  static_configs:
+  - targets:
+    - 192.168.0.200
+    - 192.168.0.201
+    - 192.168.0.202
+    - 192.168.0.203
+  relabel_configs:
+  # Use the iDRAC address as the "target" query parameter.
+  - source_labels: [__address__]
+    target_label: __param_target
+  # Keep the iDRAC address as the instance label.
+  - source_labels: [__param_target]
+    target_label: instance
+  # Send the scrape to the exporter instead of the iDRAC itself.
+  - target_label: __address__
+    replacement: 192.168.0.30:9348

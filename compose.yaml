@@ -1,24 +1,37 @@
+# Profiles:
+#   minimal - idrac_exporter + VictoriaMetrics + vmagent + Grafana
+#             docker compose --profile minimal up -d
+#   full    - everything above plus vmalert and alertmanager
+#             docker compose --profile full up -d
+#   (or set COMPOSE_PROFILES=minimal|full in the environment / .env file)
 services:
   #  Metrics collector.
   #  It scrapes targets defined in --promscrape.config
   #  And forward them to --remoteWrite.url
   vmagent:
     image: victoriametrics/vmagent:v1.156.0
+    profiles:
+      - minimal
+      - full
     depends_on:
       - "victoriametrics"
     ports:
       - 8429:8429
     volumes:
       - vmagentdata:/vmagentdata
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yaml:/etc/prometheus/prometheus.yml
     command:
       - "--promscrape.config=/etc/prometheus/prometheus.yml"
       - "--remoteWrite.url=http://victoriametrics:8428/api/v1/write"
     restart: always
+
   # VictoriaMetrics instance, a single process responsible for
   # storing metrics and serve read requests.
   victoriametrics:
     image: victoriametrics/victoria-metrics:v1.156.0
+    profiles:
+      - minimal
+      - full
     ports:
       - 8428:8428
       - 8089:8089
@@ -39,6 +52,9 @@ services:
 
   grafana:
     image: grafana/grafana:12.2.0
+    profiles:
+      - minimal
+      - full
     depends_on:
       - "victoriametrics"
     ports:
@@ -54,6 +70,8 @@ services:
   # vmalert executes alerting and recording rules
   vmalert:
     image: victoriametrics/vmalert:v1.156.0
+    profiles:
+      - full
     depends_on:
       - "victoriametrics"
       - "alertmanager"
@@ -80,6 +98,8 @@ services:
   # and distributes them according to --config.file.
   alertmanager:
     image: prom/alertmanager:v0.28.1
+    profiles:
+      - full
     volumes:
       - ./alertmanager.yml:/config/alertmanager.yml
     command:
@@ -91,6 +111,9 @@ services:
   # idrac_exporter exposes Dell iDRAC telemetry metrics for scraping.
   idrac_exporter:
     image: idrac_exporter:latest
+    profiles:
+      - minimal
+      - full
     ports:
       - 9348:9348
     volumes:

@@ -143,5 +143,33 @@ metrics:
 # The names of the metric reports can be found in the iDRAC documentation or from
 # /redfish/v1/TelemetryService/MetricReportDefinitions
 
-metric_reports:
+telemetry_reports:
+  - AggregationMetrics
+  - CPUMemMetrics
+  - CPURegisters
+  - CPUSensor
+  - FanSensor
+  - FCPortStatistics
+  - FCSensor
+  - FPGASensor
+  - GPUMetrics
+  - GPUStatistics
+  - GPUSubsystemPower
+  - InfiniBandStatistics
+  - MemoryMetrics
+  - MemorySensor
+  - NICSensor
+  - NICStatistics
+  - NVMeSMARTData
+  - PowerMetrics
+  - PowerStatistics
+  - PSUMetrics
+  - Sensor
+  - SerialLog
+  - SFPTransceiver
   - StorageDiskSMARTData
+  - StorageSensor
+  - SystemUsage
+  - ThermalMetrics
+  - ThermalSensor
+  - x86SubsystemPower

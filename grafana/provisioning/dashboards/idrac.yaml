@@ -1,0 +1,17 @@
+# Grafana dashboard provisioning.
+# Loads every dashboard JSON found in /var/lib/grafana/dashboards
+# (mounted from ./grafana/dashboards in compose.yaml).
+apiVersion: 1
+
+providers:
+  - name: idrac
+    orgId: 1
+    folder: iDRAC
+    folderUid: idrac
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 30
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards
+      foldersFromFilesStructure: false

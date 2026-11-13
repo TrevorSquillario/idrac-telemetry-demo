@@ -1,0 +1,18 @@
+# Grafana datasource provisioning.
+# VictoriaMetrics exposes a Prometheus-compatible query API, so it is
+# provisioned as a Prometheus datasource.
+apiVersion: 1
+
+datasources:
+  - name: Victoria
+    uid: victoriametrics
+    type: prometheus
+    access: proxy
+    url: http://victoriametrics:8428
+    isDefault: true
+    editable: true
+    jsonData:
+      httpMethod: POST
+      # VictoriaMetrics supports Prometheus query API including
+      # /api/v1/query and /api/v1/query_range.
+      timeInterval: 10s
