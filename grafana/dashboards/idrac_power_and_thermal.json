@@ -62,6 +62,18 @@
       "tooltip": "Drill down to single server details",
       "type": "link",
       "url": "d/YVz226S4z"
+    },
+    {
+      "asDropdown": false,
+      "icon": "dashboard",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [],
+      "targetBlank": false,
+      "title": "Performance & Throttling",
+      "tooltip": "CPU frequency, throttling and power capping",
+      "type": "link",
+      "url": "d/idrac-performance"
     }
   ],
   "liveNow": false,

@@ -74,6 +74,18 @@
       "tooltip": "Power, energy and thermal telemetry",
       "type": "link",
       "url": "d/idrac-power-thermal"
+    },
+    {
+      "asDropdown": false,
+      "icon": "dashboard",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [],
+      "targetBlank": false,
+      "title": "Performance & Throttling",
+      "tooltip": "CPU frequency, throttling and power capping",
+      "type": "link",
+      "url": "d/idrac-performance"
     }
   ],
   "liveNow": false,
