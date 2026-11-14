@@ -144,18 +144,18 @@ metrics:
 # /redfish/v1/TelemetryService/MetricReportDefinitions
 
 telemetry_reports:
-  - AggregationMetrics
+#  - AggregationMetrics
   - CPUMemMetrics
   - CPURegisters
   - CPUSensor
   - FanSensor
-  - FCPortStatistics
-  - FCSensor
-  - FPGASensor
-  - GPUMetrics
-  - GPUStatistics
-  - GPUSubsystemPower
-  - InfiniBandStatistics
+#  - FCPortStatistics
+#  - FCSensor
+#  - FPGASensor
+#  - GPUMetrics
+#  - GPUStatistics
+#  - GPUSubsystemPower
+#  - InfiniBandStatistics
   - MemoryMetrics
   - MemorySensor
   - NICSensor
@@ -165,8 +165,8 @@ telemetry_reports:
   - PowerStatistics
   - PSUMetrics
   - Sensor
-  - SerialLog
-  - SFPTransceiver
+#  - SerialLog
+#  - SFPTransceiver
   - StorageDiskSMARTData
   - StorageSensor
   - SystemUsage
