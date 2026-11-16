@@ -10,6 +10,7 @@ services:
   #  And forward them to --remoteWrite.url
   vmagent:
     image: victoriametrics/vmagent:v1.156.0
+    container_name: vmagent
     profiles:
       - minimal
       - full
@@ -31,6 +32,7 @@ services:
   # storing metrics and serve read requests.
   victoriametrics:
     image: victoriametrics/victoria-metrics:v1.156.0
+    container_name: victoriametrics
     profiles:
       - minimal
       - full
@@ -56,6 +58,7 @@ services:
 
   grafana:
     image: grafana/grafana:12.2.0
+    container_name: grafana
     profiles:
       - minimal
       - full
@@ -76,6 +79,7 @@ services:
   # vmalert executes alerting and recording rules
   vmalert:
     image: victoriametrics/vmalert:v1.156.0
+    container_name: vmalert
     profiles:
       - full
     depends_on:
@@ -106,6 +110,7 @@ services:
   # and distributes them according to --config.file.
   alertmanager:
     image: prom/alertmanager:v0.28.1
+    container_name: alertmanager
     profiles:
       - full
     volumes:
@@ -121,6 +126,7 @@ services:
   # idrac_exporter exposes Dell iDRAC telemetry metrics for scraping.
   idrac_exporter:
     image: idrac_exporter:latest
+    container_name: idrac_exporter
     profiles:
       - minimal
       - full
