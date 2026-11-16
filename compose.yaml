@@ -18,11 +18,13 @@ services:
     ports:
       - 8429:8429
     volumes:
-      - vmagentdata:/vmagentdata
+      - /app/vmagent/data:/vmagentdata
       - ./prometheus.yaml:/etc/prometheus/prometheus.yml
     command:
       - "--promscrape.config=/etc/prometheus/prometheus.yml"
       - "--remoteWrite.url=http://victoriametrics:8428/api/v1/write"
+    networks:
+      - monitoring-net
     restart: always
 
   # VictoriaMetrics instance, a single process responsible for
@@ -40,7 +42,7 @@ services:
       - 2003:2003/udp
       - 4242:4242
     volumes:
-      - vmdata:/storage
+      - /app/victoriametrics/data:/storage
     command:
       - "--storageDataPath=/storage"
       - "--graphiteListenAddr=:2003"
@@ -48,6 +50,8 @@ services:
       - "--httpListenAddr=:8428"
       - "--influxListenAddr=:8089"
       - "--vmalert.proxyURL=http://vmalert:8880"
+    networks:
+      - monitoring-net
     restart: always
 
   grafana:
@@ -63,9 +67,11 @@ services:
     environment:
       - GF_PLUGINS_PREINSTALL=yesoreyeram-infinity-datasource
     volumes:
-      - grafanadata:/var/lib/grafana
+      - /app/grafana/data:/var/lib/grafana
       - ./grafana/provisioning:/etc/grafana/provisioning
       - ./grafana/dashboards:/var/lib/grafana/dashboards
+    networks:
+      - monitoring-net
 
   # vmalert executes alerting and recording rules
   vmalert:
@@ -92,6 +98,8 @@ services:
       # display source of alerts in grafana
       - "--external.url=http://127.0.0.1:3000" #grafana outside container
       - '--external.alert.source=explore?orgId=1&left={"datasource":"VictoriaMetrics","queries":[{"expr":{{.Expr|jsonEscape|queryEscape}},"refId":"A"}],"range":{"from":"{{ .ActiveAt.UnixMilli }}","to":"now"}}'
+    networks:
+      - monitoring-net
     restart: always
 
   # alertmanager receives alerting notifications from vmalert
@@ -106,6 +114,8 @@ services:
       - "--config.file=/config/alertmanager.yml"
     ports:
       - 9093:9093
+    networks:
+      - monitoring-net
     restart: always
 
   # idrac_exporter exposes Dell iDRAC telemetry metrics for scraping.
@@ -118,9 +128,9 @@ services:
       - 9348:9348
     volumes:
       - ./config.yaml:/etc/prometheus/idrac.yml
+    networks:
+      - monitoring-net
     restart: always
 
-volumes:
-  vmagentdata: {}
-  vmdata: {}
-  grafanadata: {}
+networks:
+  monitoring-net: {}
