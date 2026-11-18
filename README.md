@@ -35,6 +35,15 @@ The exporter reads `config.yaml`, which is mounted into the container at
 all metric groups with `metrics.all.enabled: true` and list the telemetry reports
 you want to scrape under `telemetry_reports`.
 
+iDRAC credentials can be set in the `config.yaml` or by environment variables passed to the container.
+```
+hosts:
+  default:
+    encoded: false        # CONFIG_DEFAULT_ENCODED=false
+    username: root        # CONFIG_DEFAULT_USERNAME=user
+    password: calvin        # CONFIG_DEFAULT_PASSWORD=pass
+```
+
 The available metric report names can also be discovered from the iDRAC itself at
 `/redfish/v1/TelemetryService/MetricReportDefinitions`.
 
