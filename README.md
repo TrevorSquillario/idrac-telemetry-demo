@@ -3,8 +3,10 @@ Example code to start monitoring iDRAC Telemetry with Prometheus/Grafana
 
 ## Getting Started
 
+This example revolves around the [idrac_exporter](https://github.com/mrlhansen/idrac_exporter) project. It acts as a very simple proxy to provide a `/metrics` endpoint for the iDRAC. It receives a prometheus scrape query like `http://server-name:9348/metrics?target=192.168.1.100`, performs a Redfish query to the `target` and outputs prometheus metrics like [examples/all_metrics.txt](examples/all_metrics.txt)
+
 The compose file expects a locally built `idrac_exporter:latest` image, so build it
-from the fork before starting the stack.
+from my fork before starting the stack. My fork ads iDRAC Telemetry support. Issue has been opened for this to be added to the main project https://github.com/mrlhansen/idrac_exporter/issues/236 
 
 1. Clone the exporter fork:
 

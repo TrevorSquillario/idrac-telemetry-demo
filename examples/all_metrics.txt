@@ -1,0 +1,903 @@
+# HELP idrac_cpu_current_speed_mhz Current speed of the CPU in Mhz
+# TYPE idrac_cpu_current_speed_mhz gauge
+idrac_cpu_current_speed_mhz{id="CPU.Socket.1"} 2750
+# HELP idrac_cpu_health Health status of the CPU
+# TYPE idrac_cpu_health gauge
+idrac_cpu_health{id="CPU.Socket.1",status="OK"} 0
+# HELP idrac_cpu_info Information about the CPU
+# TYPE idrac_cpu_info untyped
+idrac_cpu_info{arch="x86-64",id="CPU.Socket.1",manufacturer="AMD",model="AMD EPYC 9454 48-Core Processor",socket="CPU.Socket.1"} 1
+# HELP idrac_cpu_max_speed_mhz Maximum speed of the CPU in Mhz
+# TYPE idrac_cpu_max_speed_mhz gauge
+idrac_cpu_max_speed_mhz{id="CPU.Socket.1"} 4400
+# HELP idrac_cpu_total_cores Total number of CPU cores
+# TYPE idrac_cpu_total_cores gauge
+idrac_cpu_total_cores{id="CPU.Socket.1"} 48
+# HELP idrac_cpu_total_threads Total number of CPU threads
+# TYPE idrac_cpu_total_threads gauge
+idrac_cpu_total_threads{id="CPU.Socket.1"} 96
+# HELP idrac_cpu_voltage Current voltage of the CPU
+# TYPE idrac_cpu_voltage gauge
+idrac_cpu_voltage{id="CPU.Socket.1"} 1.8
+# HELP idrac_dell_battery_rollup_health Health rollup status for the batteries
+# TYPE idrac_dell_battery_rollup_health gauge
+idrac_dell_battery_rollup_health{status="OK"} 0
+# HELP idrac_dell_controller_battery_health Health status of storage controller battery
+# TYPE idrac_dell_controller_battery_health gauge
+idrac_dell_controller_battery_health{id="Battery.Integrated.1:RAID.SL.1-1",name="Battery on RAID Controller in SL 1",status="OK",storage_id="RAID.SL.1-1"} 0
+# HELP idrac_dell_estimated_system_airflow_cfm Estimated system airflow in cubic feet per minute
+# TYPE idrac_dell_estimated_system_airflow_cfm gauge
+idrac_dell_estimated_system_airflow_cfm 56
+# HELP idrac_dell_manager_license_info Information about licenses installed on the manager
+# TYPE idrac_dell_manager_license_info untyped
+idrac_dell_manager_license_info{description="OpenManage Enterprise with Advanced+ license",device="iDRAC.Embedded.1",id="DE00000342332999",status="OK",type="Perpetual"} 1
+idrac_dell_manager_license_info{description="Secured Component Verification",device="iDRAC.Embedded.1",id="FD00000031920780",status="OK",type="Perpetual"} 1
+idrac_dell_manager_license_info{description="iDRAC9 16G Datacenter License",device="iDRAC.Embedded.1",id="DE00000358095940",status="OK",type="Perpetual"} 1
+# HELP idrac_exporter_build_info Constant metric with build information for the exporter
+# TYPE idrac_exporter_build_info untyped
+idrac_exporter_build_info{goversion="go1.27.4",revision="0e126201aee9499e5c81a4da15223255780bff21",version="unknown"} 1
+# HELP idrac_exporter_scrape_errors_total Total number of errors encountered while scraping target
+# TYPE idrac_exporter_scrape_errors_total counter
+idrac_exporter_scrape_errors_total 422
+# HELP idrac_manager_health Health status of the manager
+# TYPE idrac_manager_health gauge
+idrac_manager_health{id="iDRAC.Embedded.1",status="OK"} 0
+# HELP idrac_manager_info Information about the manager
+# TYPE idrac_manager_info untyped
+idrac_manager_info{firmware="7.20.80.50",id="iDRAC.Embedded.1",model="iDRAC 9",type="16G Monolithic"} 1
+# HELP idrac_manager_remote_console_enabled Whether the remote console service is enabled
+# TYPE idrac_manager_remote_console_enabled gauge
+idrac_manager_remote_console_enabled 1
+# HELP idrac_manager_remote_console_max_concurrent_sessions Maximum number of concurrent remote console sessions
+# TYPE idrac_manager_remote_console_max_concurrent_sessions gauge
+idrac_manager_remote_console_max_concurrent_sessions 6
+# HELP idrac_memory_module_capacity_bytes Capacity of memory modules in bytes
+# TYPE idrac_memory_module_capacity_bytes gauge
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A1"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A10"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A11"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A12"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A2"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A3"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A4"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A5"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A6"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A7"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A8"} 1.7179869184e+10
+idrac_memory_module_capacity_bytes{id="DIMM.Socket.A9"} 1.7179869184e+10
+# HELP idrac_memory_module_health Health status for memory modules
+# TYPE idrac_memory_module_health gauge
+idrac_memory_module_health{id="DIMM.Socket.A1",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A10",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A11",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A12",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A2",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A3",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A4",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A5",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A6",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A7",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A8",status="OK"} 0
+idrac_memory_module_health{id="DIMM.Socket.A9",status="OK"} 0
+# HELP idrac_memory_module_info Information about memory modules
+# TYPE idrac_memory_module_info untyped
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A1",manufacturer="Micron Technology",name="DIMM A1",part_number="MTC10F1084S1RC48BA1",rank="1",serial="40B271DD",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A10",manufacturer="Micron Technology",name="DIMM A10",part_number="MTC10F1084S1RC48BA1",rank="1",serial="40B2579A",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A11",manufacturer="Micron Technology",name="DIMM A11",part_number="MTC10F1084S1RC48BA1",rank="1",serial="40B25785",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A12",manufacturer="Micron Technology",name="DIMM A12",part_number="MTC10F1084S1RC48BA1",rank="1",serial="40B24B36",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A2",manufacturer="Micron Technology",name="DIMM A2",part_number="MTC10F1084S1RC48BA1",rank="1",serial="3E5EC3EE",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A3",manufacturer="Micron Technology",name="DIMM A3",part_number="MTC10F1084S1RC48BA1",rank="1",serial="3E5EA961",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A4",manufacturer="Micron Technology",name="DIMM A4",part_number="MTC10F1084S1RC48BA1",rank="1",serial="40B24B02",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A5",manufacturer="Micron Technology",name="DIMM A5",part_number="MTC10F1084S1RC48BA1",rank="1",serial="3E5EBFB5",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A6",manufacturer="Micron Technology",name="DIMM A6",part_number="MTC10F1084S1RC48BA1",rank="1",serial="3E5EBB44",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A7",manufacturer="Micron Technology",name="DIMM A7",part_number="MTC10F1084S1RC48BA1",rank="1",serial="3E5ED360",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A8",manufacturer="Micron Technology",name="DIMM A8",part_number="MTC10F1084S1RC48BA1",rank="1",serial="40B24DF8",type="DDR5"} 1
+idrac_memory_module_info{ecc="MultiBitECC",id="DIMM.Socket.A9",manufacturer="Micron Technology",name="DIMM A9",part_number="MTC10F1084S1RC48BA1",rank="1",serial="3E5ED22A",type="DDR5"} 1
+# HELP idrac_memory_module_speed_mhz Speed of memory modules in Mhz
+# TYPE idrac_memory_module_speed_mhz gauge
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A1"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A10"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A11"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A12"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A2"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A3"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A4"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A5"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A6"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A7"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A8"} 4800
+idrac_memory_module_speed_mhz{id="DIMM.Socket.A9"} 4800
+# HELP idrac_network_adapter_health Health status for network adapters
+# TYPE idrac_network_adapter_health gauge
+idrac_network_adapter_health{id="NIC.Embedded.1",status="OK"} 0
+idrac_network_adapter_health{id="NIC.Integrated.1",status="OK"} 0
+# HELP idrac_network_adapter_info Information about network adapters
+# TYPE idrac_network_adapter_info untyped
+idrac_network_adapter_info{firmware="23.11.16.22",id="NIC.Integrated.1",manufacturer="Broadcom Inc. and subsidiaries",model="BRCM 2P 25G SFP 57414S OCP NIC",serial="VNFCBBA31805LX"} 1
+idrac_network_adapter_info{firmware="23.11.4",id="NIC.Embedded.1",manufacturer="Broadcom Inc. and subsidiaries",model="",serial=""} 1
+# HELP idrac_network_port_current_speed_mbps Current link speed of network ports in Mbps
+# TYPE idrac_network_port_current_speed_mbps gauge
+idrac_network_port_current_speed_mbps{adapter_id="NIC.Embedded.1",id="NIC.Embedded.1-1"} 1000
+idrac_network_port_current_speed_mbps{adapter_id="NIC.Embedded.1",id="NIC.Embedded.2-1"} 0
+idrac_network_port_current_speed_mbps{adapter_id="NIC.Integrated.1",id="NIC.Integrated.1-1"} 0
+idrac_network_port_current_speed_mbps{adapter_id="NIC.Integrated.1",id="NIC.Integrated.1-2"} 0
+# HELP idrac_network_port_health Health status for network ports
+# TYPE idrac_network_port_health gauge
+idrac_network_port_health{adapter_id="NIC.Embedded.1",id="NIC.Embedded.1-1",status="OK"} 0
+idrac_network_port_health{adapter_id="NIC.Embedded.1",id="NIC.Embedded.2-1",status="OK"} 0
+idrac_network_port_health{adapter_id="NIC.Integrated.1",id="NIC.Integrated.1-1",status="OK"} 0
+idrac_network_port_health{adapter_id="NIC.Integrated.1",id="NIC.Integrated.1-2",status="OK"} 0
+# HELP idrac_network_port_link_up Link status of network ports (up or down)
+# TYPE idrac_network_port_link_up gauge
+idrac_network_port_link_up{adapter_id="NIC.Embedded.1",id="NIC.Embedded.1-1",status="LinkUp"} 1
+idrac_network_port_link_up{adapter_id="NIC.Embedded.1",id="NIC.Embedded.2-1",status="LinkDown"} 0
+idrac_network_port_link_up{adapter_id="NIC.Integrated.1",id="NIC.Integrated.1-1",status="LinkDown"} 0
+idrac_network_port_link_up{adapter_id="NIC.Integrated.1",id="NIC.Integrated.1-2",status="LinkDown"} 0
+# HELP idrac_power_control_avg_consumed_watts Average consumption of power control system during the reported interval
+# TYPE idrac_power_control_avg_consumed_watts gauge
+idrac_power_control_avg_consumed_watts{id="0",name="System Power Control"} 221
+# HELP idrac_power_control_capacity_watts Capacity of power control system in watts
+# TYPE idrac_power_control_capacity_watts gauge
+idrac_power_control_capacity_watts{id="0",name="System Power Control"} 1960
+# HELP idrac_power_control_consumed_watts Consumption of power control system in watts
+# TYPE idrac_power_control_consumed_watts gauge
+idrac_power_control_consumed_watts{id="0",name="System Power Control"} 222
+# HELP idrac_power_control_interval_in_minutes Interval for measurements of power control system
+# TYPE idrac_power_control_interval_in_minutes gauge
+idrac_power_control_interval_in_minutes{id="0",name="System Power Control"} 1
+# HELP idrac_power_control_max_consumed_watts Maximum consumption of power control system during the reported interval
+# TYPE idrac_power_control_max_consumed_watts gauge
+idrac_power_control_max_consumed_watts{id="0",name="System Power Control"} 237
+# HELP idrac_power_control_min_consumed_watts Minimum consumption of power control system during the reported interval
+# TYPE idrac_power_control_min_consumed_watts gauge
+idrac_power_control_min_consumed_watts{id="0",name="System Power Control"} 217
+# HELP idrac_power_supply_capacity_watts Power supply capacity in watts
+# TYPE idrac_power_supply_capacity_watts gauge
+idrac_power_supply_capacity_watts{id="0"} 1400
+idrac_power_supply_capacity_watts{id="1"} 1400
+# HELP idrac_power_supply_efficiency_percent Power supply efficiency in percentage
+# TYPE idrac_power_supply_efficiency_percent gauge
+idrac_power_supply_efficiency_percent{id="0"} 92.0000016689301
+idrac_power_supply_efficiency_percent{id="1"} 92.0000016689301
+# HELP idrac_power_supply_health Power supply health status
+# TYPE idrac_power_supply_health gauge
+idrac_power_supply_health{id="0",status="OK"} 0
+idrac_power_supply_health{id="1",status="OK"} 0
+# HELP idrac_power_supply_input_voltage Power supply input voltage
+# TYPE idrac_power_supply_input_voltage gauge
+idrac_power_supply_input_voltage{id="0"} 204
+idrac_power_supply_input_voltage{id="1"} 204
+# HELP idrac_power_supply_input_watts Power supply input in watts
+# TYPE idrac_power_supply_input_watts gauge
+idrac_power_supply_input_watts{id="0"} 222.25
+idrac_power_supply_input_watts{id="1"} 5
+# HELP idrac_power_supply_output_watts Power supply output in watts
+# TYPE idrac_power_supply_output_watts gauge
+idrac_power_supply_output_watts{id="0"} 190.25
+idrac_power_supply_output_watts{id="1"} 0
+# HELP idrac_sensors_fan_health Health status for fans
+# TYPE idrac_sensors_fan_health gauge
+idrac_sensors_fan_health{id="0",name="System Board Fan1A",status="OK"} 0
+idrac_sensors_fan_health{id="1",name="System Board Fan1B",status="OK"} 0
+idrac_sensors_fan_health{id="10",name="System Board Fan6A",status="OK"} 0
+idrac_sensors_fan_health{id="11",name="System Board Fan6B",status="OK"} 0
+idrac_sensors_fan_health{id="2",name="System Board Fan2A",status="OK"} 0
+idrac_sensors_fan_health{id="3",name="System Board Fan2B",status="OK"} 0
+idrac_sensors_fan_health{id="4",name="System Board Fan3A",status="OK"} 0
+idrac_sensors_fan_health{id="5",name="System Board Fan3B",status="OK"} 0
+idrac_sensors_fan_health{id="6",name="System Board Fan4A",status="OK"} 0
+idrac_sensors_fan_health{id="7",name="System Board Fan4B",status="OK"} 0
+idrac_sensors_fan_health{id="8",name="System Board Fan5A",status="OK"} 0
+idrac_sensors_fan_health{id="9",name="System Board Fan5B",status="OK"} 0
+# HELP idrac_sensors_fan_speed Sensors reporting fan speed measurements
+# TYPE idrac_sensors_fan_speed gauge
+idrac_sensors_fan_speed{id="0",name="System Board Fan1A",units="rpm"} 4200
+idrac_sensors_fan_speed{id="1",name="System Board Fan1B",units="rpm"} 3720
+idrac_sensors_fan_speed{id="10",name="System Board Fan6A",units="rpm"} 4200
+idrac_sensors_fan_speed{id="11",name="System Board Fan6B",units="rpm"} 3720
+idrac_sensors_fan_speed{id="2",name="System Board Fan2A",units="rpm"} 4200
+idrac_sensors_fan_speed{id="3",name="System Board Fan2B",units="rpm"} 3720
+idrac_sensors_fan_speed{id="4",name="System Board Fan3A",units="rpm"} 4200
+idrac_sensors_fan_speed{id="5",name="System Board Fan3B",units="rpm"} 3720
+idrac_sensors_fan_speed{id="6",name="System Board Fan4A",units="rpm"} 4200
+idrac_sensors_fan_speed{id="7",name="System Board Fan4B",units="rpm"} 3720
+idrac_sensors_fan_speed{id="8",name="System Board Fan5A",units="rpm"} 4200
+idrac_sensors_fan_speed{id="9",name="System Board Fan5B",units="rpm"} 3720
+# HELP idrac_sensors_temperature Sensors reporting temperature measurements
+# TYPE idrac_sensors_temperature gauge
+idrac_sensors_temperature{context="cpu",id="0",name="CPU1 Temp",units="celsius"} 57
+idrac_sensors_temperature{context="gpu",id="2",name="GPU Temp 2",units="celsius"} 45
+idrac_sensors_temperature{context="systemboard",id="1",name="Inlet Temp",units="celsius"} 20
+idrac_sensors_temperature{context="systemboard",id="3",name="System Board Exhaust Temp",units="celsius"} 26
+# HELP idrac_sensors_voltage Sensors reporting voltage measurements
+# TYPE idrac_sensors_voltage gauge
+idrac_sensors_voltage{id="20",name="CPU1 VCCIN VR",units="volts"} 0.56
+idrac_sensors_voltage{id="21",name="CPU1 VDDIO VR",units="volts"} 0.56
+idrac_sensors_voltage{id="22",name="CPU1 HV VR",units="volts"} 0.4
+idrac_sensors_voltage{id="24",name="PS1 Voltage 1",units="volts"} 204
+idrac_sensors_voltage{id="25",name="PS2 Voltage 2",units="volts"} 204
+# HELP idrac_storage_controller_cache_size_bytes Size of the controller cache in bytes
+# TYPE idrac_storage_controller_cache_size_bytes gauge
+idrac_storage_controller_cache_size_bytes{id="RAID.SL.1-1",storage_id="RAID.SL.1-1"} 8.589934592e+09
+# HELP idrac_storage_controller_health Health status for storage controllers
+# TYPE idrac_storage_controller_health gauge
+idrac_storage_controller_health{id="RAID.SL.1-1",status="OK",storage_id="RAID.SL.1-1"} 0
+# HELP idrac_storage_controller_info Information about storage controllers
+# TYPE idrac_storage_controller_info untyped
+idrac_storage_controller_info{firmware="",id="AHCI.Embedded.1-1",manufacturer="DELL",model="FCH SATA Controller [AHCI mode]",name="FCH SATA Controller [AHCI mode]",storage_id="AHCI.Embedded.1-1"} 1
+idrac_storage_controller_info{firmware="52.30.0-6115",id="RAID.SL.1-1",manufacturer="DELL",model="PERC H755 Front",name="PERC H755 Front",storage_id="RAID.SL.1-1"} 1
+# HELP idrac_storage_controller_speed_mbps Speed of storage controllers in Mbps
+# TYPE idrac_storage_controller_speed_mbps gauge
+idrac_storage_controller_speed_mbps{id="RAID.SL.1-1",storage_id="RAID.SL.1-1"} 12000
+# HELP idrac_storage_drive_capacity_bytes Capacity of disk drives in bytes
+# TYPE idrac_storage_drive_capacity_bytes gauge
+idrac_storage_drive_capacity_bytes{id="Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",storage_id="RAID.SL.1-1"} 4.79559942144e+11
+idrac_storage_drive_capacity_bytes{id="Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",storage_id="RAID.SL.1-1"} 4.79559942144e+11
+# HELP idrac_storage_drive_health Health status for disk drives
+# TYPE idrac_storage_drive_health gauge
+idrac_storage_drive_health{id="Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",status="OK",storage_id="RAID.SL.1-1"} 0
+idrac_storage_drive_health{id="Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",status="OK",storage_id="RAID.SL.1-1"} 0
+# HELP idrac_storage_drive_info Information about disk drives
+# TYPE idrac_storage_drive_info untyped
+idrac_storage_drive_info{id="Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",manufacturer="MICRON",mediatype="SSD",model="MTFDDAK480TGB-1B",name="Solid State Disk 0:1:0",protocol="SATA",serial="233643674B4B",slot="0",storage_id="RAID.SL.1-1"} 1
+idrac_storage_drive_info{id="Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",manufacturer="MICRON",mediatype="SSD",model="MTFDDAK480TGB-1B",name="Solid State Disk 0:1:1",protocol="SATA",serial="233643674CBD",slot="1",storage_id="RAID.SL.1-1"} 1
+# HELP idrac_storage_drive_life_left_percent Predicted life left in percent
+# TYPE idrac_storage_drive_life_left_percent gauge
+idrac_storage_drive_life_left_percent{id="Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",storage_id="RAID.SL.1-1"} 100
+idrac_storage_drive_life_left_percent{id="Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",storage_id="RAID.SL.1-1"} 100
+# HELP idrac_storage_health Health status for storage sub systems
+# TYPE idrac_storage_health gauge
+idrac_storage_health{id="RAID.SL.1-1",status="OK"} 0
+# HELP idrac_storage_info Information about storage sub systems
+# TYPE idrac_storage_info untyped
+idrac_storage_info{id="AHCI.Embedded.1-1",name="FCH SATA Controller [AHCI mode]"} 1
+idrac_storage_info{id="RAID.SL.1-1",name="PERC H755 Front"} 1
+# HELP idrac_storage_volume_capacity_bytes Capacity of virtual volumes in bytes
+# TYPE idrac_storage_volume_capacity_bytes gauge
+idrac_storage_volume_capacity_bytes{id="Disk.Virtual.239:RAID.SL.1-1",storage_id="RAID.SL.1-1"} 9.59119884288e+11
+# HELP idrac_storage_volume_health Health status for virtual volumes
+# TYPE idrac_storage_volume_health gauge
+idrac_storage_volume_health{id="Disk.Virtual.239:RAID.SL.1-1",status="OK",storage_id="RAID.SL.1-1"} 0
+# HELP idrac_storage_volume_info Information about virtual volumes
+# TYPE idrac_storage_volume_info untyped
+idrac_storage_volume_info{id="Disk.Virtual.239:RAID.SL.1-1",name="VD",raidtype="RAID0",storage_id="RAID.SL.1-1",volumetype="NonRedundant"} 1
+# HELP idrac_storage_volume_media_span_count Number of media spanned by virtual volumes
+# TYPE idrac_storage_volume_media_span_count gauge
+idrac_storage_volume_media_span_count{id="Disk.Virtual.239:RAID.SL.1-1",storage_id="RAID.SL.1-1"} 2
+# HELP idrac_system_bios_info Information about the BIOS
+# TYPE idrac_system_bios_info untyped
+idrac_system_bios_info{version="1.15.3"} 1
+# HELP idrac_system_cpu_count Total number of CPUs in the system
+# TYPE idrac_system_cpu_count gauge
+idrac_system_cpu_count{model="AMD EPYC 9454 48-Core Processor"} 1
+# HELP idrac_system_health Health status of the system
+# TYPE idrac_system_health gauge
+idrac_system_health{status="OK"} 0
+# HELP idrac_system_indicator_active State of the system location indicator
+# TYPE idrac_system_indicator_active gauge
+idrac_system_indicator_active 0
+# HELP idrac_system_indicator_led_on Indicator LED state of the system
+# TYPE idrac_system_indicator_led_on gauge
+idrac_system_indicator_led_on{state="Lit"} 1
+# HELP idrac_system_machine_info Information about the machine
+# TYPE idrac_system_machine_info untyped
+idrac_system_machine_info{hostname="",manufacturer="Dell Inc.",model="PowerEdge R7615",serial="6K15PZ3",sku="6K15PZ3"} 1
+# HELP idrac_system_memory_size_bytes Total memory size of the system in bytes
+# TYPE idrac_system_memory_size_bytes gauge
+idrac_system_memory_size_bytes 2.06158430208e+11
+# HELP idrac_system_power_on Power state of the system
+# TYPE idrac_system_power_on gauge
+idrac_system_power_on 1
+# HELP idrac_telemetry_acc_core_cycles_high_total Metric report Sensor acc_core_cycles_high
+# TYPE idrac_telemetry_acc_core_cycles_high_total counter
+idrac_telemetry_acc_core_cycles_high_total{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_acc_core_cycles_low_total Metric report Sensor acc_core_cycles_low
+# TYPE idrac_telemetry_acc_core_cycles_low_total counter
+idrac_telemetry_acc_core_cycles_low_total{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_address_parity_error_total Metric report Sensor address_parity_error
+# TYPE idrac_telemetry_address_parity_error_total counter
+idrac_telemetry_address_parity_error_total{context="DIMM A1",fqdd="DIMM.Socket.A1",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A10",fqdd="DIMM.Socket.A10",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A11",fqdd="DIMM.Socket.A11",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A12",fqdd="DIMM.Socket.A12",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A2",fqdd="DIMM.Socket.A2",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A3",fqdd="DIMM.Socket.A3",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A4",fqdd="DIMM.Socket.A4",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A5",fqdd="DIMM.Socket.A5",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A6",fqdd="DIMM.Socket.A6",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A7",fqdd="DIMM.Socket.A7",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A8",fqdd="DIMM.Socket.A8",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_address_parity_error_total{context="DIMM A9",fqdd="DIMM.Socket.A9",metric_report_id="MemoryMetrics"} 0
+# HELP idrac_telemetry_aggregate_usage Metric report Sensor aggregate_usage
+# TYPE idrac_telemetry_aggregate_usage gauge
+idrac_telemetry_aggregate_usage{context="SystemUsage",fqdd="SystemUsage",metric_report_id="SystemUsage"} 0
+# HELP idrac_telemetry_amps_reading Metric report Sensor amps_reading
+# TYPE idrac_telemetry_amps_reading gauge
+idrac_telemetry_amps_reading{context="PS1 Current 1",fqdd="iDRAC.Embedded.1#PS1Current1",metric_report_id="Sensor"} 1
+idrac_telemetry_amps_reading{context="PS2 Current 2",fqdd="iDRAC.Embedded.1#PS2Current2",metric_report_id="Sensor"} 0
+# HELP idrac_telemetry_avg_frequency_across_cores Metric report Sensor avg_frequency_across_cores
+# TYPE idrac_telemetry_avg_frequency_across_cores gauge
+idrac_telemetry_avg_frequency_across_cores{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_command_timeout Metric report Sensor command_timeout
+# TYPE idrac_telemetry_command_timeout gauge
+idrac_telemetry_command_timeout{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_command_timeout{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_compute_power Metric report Sensor compute_power
+# TYPE idrac_telemetry_compute_power gauge
+idrac_telemetry_compute_power{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 162
+# HELP idrac_telemetry_correctable_ecc_error_total Metric report Sensor correctable_ecc_error
+# TYPE idrac_telemetry_correctable_ecc_error_total counter
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A1",fqdd="DIMM.Socket.A1",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A10",fqdd="DIMM.Socket.A10",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A11",fqdd="DIMM.Socket.A11",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A12",fqdd="DIMM.Socket.A12",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A2",fqdd="DIMM.Socket.A2",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A3",fqdd="DIMM.Socket.A3",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A4",fqdd="DIMM.Socket.A4",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A5",fqdd="DIMM.Socket.A5",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A6",fqdd="DIMM.Socket.A6",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A7",fqdd="DIMM.Socket.A7",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A8",fqdd="DIMM.Socket.A8",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_correctable_ecc_error_total{context="DIMM A9",fqdd="DIMM.Socket.A9",metric_report_id="MemoryMetrics"} 0
+# HELP idrac_telemetry_cpu_avg_pbm_ratio_counter_low_total Metric report Sensor cpu_avg_pbm_ratio_counter_low
+# TYPE idrac_telemetry_cpu_avg_pbm_ratio_counter_low_total counter
+idrac_telemetry_cpu_avg_pbm_ratio_counter_low_total{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cpu_epi Metric report Sensor cpu_epi
+# TYPE idrac_telemetry_cpu_epi gauge
+idrac_telemetry_cpu_epi{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cpu_limiting_counter_total Metric report Sensor cpu_limiting_counter
+# TYPE idrac_telemetry_cpu_limiting_counter_total counter
+idrac_telemetry_cpu_limiting_counter_total{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cpu_pkg_energy_total Metric report Sensor cpu_pkg_energy
+# TYPE idrac_telemetry_cpu_pkg_energy_total counter
+idrac_telemetry_cpu_pkg_energy_total{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cpu_power Metric report Sensor cpu_power
+# TYPE idrac_telemetry_cpu_power gauge
+idrac_telemetry_cpu_power{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="x86SubsystemPower"} 79
+# HELP idrac_telemetry_cpu_usage Metric report Sensor cpu_usage
+# TYPE idrac_telemetry_cpu_usage gauge
+idrac_telemetry_cpu_usage{context="SystemUsage",fqdd="SystemUsage",metric_report_id="SystemUsage"} 0
+# HELP idrac_telemetry_cpu_usage_pct_reading Metric report Sensor cpu_usage_pct_reading
+# TYPE idrac_telemetry_cpu_usage_pct_reading gauge
+idrac_telemetry_cpu_usage_pct_reading{context="System Board CPU Usage",fqdd="iDRAC.Embedded.1#SystemBoardCPUUsage",metric_report_id="Sensor"} 0
+# HELP idrac_telemetry_cpu_violation_counter_total Metric report Sensor cpu_violation_counter
+# TYPE idrac_telemetry_cpu_violation_counter_total counter
+idrac_telemetry_cpu_violation_counter_total{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cpuc0_residency_high Metric report Sensor cpuc0_residency_high
+# TYPE idrac_telemetry_cpuc0_residency_high gauge
+idrac_telemetry_cpuc0_residency_high{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cpuc0_residency_low Metric report Sensor cpuc0_residency_low
+# TYPE idrac_telemetry_cpuc0_residency_low gauge
+idrac_telemetry_cpuc0_residency_low{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_crc_error_count Metric report Sensor crc_error_count
+# TYPE idrac_telemetry_crc_error_count counter
+idrac_telemetry_crc_error_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_crc_error_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_cupsiio_bandwidth_dmi Metric report Sensor cupsiio_bandwidth_dmi
+# TYPE idrac_telemetry_cupsiio_bandwidth_dmi gauge
+idrac_telemetry_cupsiio_bandwidth_dmi{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cupsiio_bandwidth_port0 Metric report Sensor cupsiio_bandwidth_port0
+# TYPE idrac_telemetry_cupsiio_bandwidth_port0 gauge
+idrac_telemetry_cupsiio_bandwidth_port0{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cupsiio_bandwidth_port1 Metric report Sensor cupsiio_bandwidth_port1
+# TYPE idrac_telemetry_cupsiio_bandwidth_port1 gauge
+idrac_telemetry_cupsiio_bandwidth_port1{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cupsiio_bandwidth_port2 Metric report Sensor cupsiio_bandwidth_port2
+# TYPE idrac_telemetry_cupsiio_bandwidth_port2 gauge
+idrac_telemetry_cupsiio_bandwidth_port2{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_cupsiio_bandwidth_port3 Metric report Sensor cupsiio_bandwidth_port3
+# TYPE idrac_telemetry_cupsiio_bandwidth_port3 gauge
+idrac_telemetry_cupsiio_bandwidth_port3{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_current_pending_sector_count Metric report Sensor current_pending_sector_count
+# TYPE idrac_telemetry_current_pending_sector_count counter
+idrac_telemetry_current_pending_sector_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_current_pending_sector_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_ddr_limiting_counter_total Metric report Sensor ddr_limiting_counter
+# TYPE idrac_telemetry_ddr_limiting_counter_total counter
+idrac_telemetry_ddr_limiting_counter_total{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_discarded_pkts_total Metric report Sensor discarded_pkts
+# TYPE idrac_telemetry_discarded_pkts_total counter
+idrac_telemetry_discarded_pkts_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_discarded_pkts_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_discarded_pkts_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_discarded_pkts_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_dram_pkg_energy_total Metric report Sensor dram_pkg_energy
+# TYPE idrac_telemetry_dram_pkg_energy_total counter
+idrac_telemetry_dram_pkg_energy_total{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_dram_pwr Metric report Sensor dram_pwr
+# TYPE idrac_telemetry_dram_pwr gauge
+idrac_telemetry_dram_pwr{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_dram_throttling Metric report Sensor dram_throttling
+# TYPE idrac_telemetry_dram_throttling gauge
+idrac_telemetry_dram_throttling{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_drive_temperature Metric report ThermalSensor drive_temperature
+# TYPE idrac_telemetry_drive_temperature gauge
+idrac_telemetry_drive_temperature{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 25
+idrac_telemetry_drive_temperature{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 23
+# HELP idrac_telemetry_ecce_rate Metric report Sensor ecce_rate
+# TYPE idrac_telemetry_ecce_rate gauge
+idrac_telemetry_ecce_rate{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_ecce_rate{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_energy_timestamp Metric report Sensor energy_timestamp
+# TYPE idrac_telemetry_energy_timestamp gauge
+idrac_telemetry_energy_timestamp{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_erase_fail_count Metric report Sensor erase_fail_count
+# TYPE idrac_telemetry_erase_fail_count counter
+idrac_telemetry_erase_fail_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_erase_fail_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_exception_mode_status Metric report Sensor exception_mode_status
+# TYPE idrac_telemetry_exception_mode_status gauge
+idrac_telemetry_exception_mode_status{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 7243
+idrac_telemetry_exception_mode_status{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 7202
+# HELP idrac_telemetry_io_usage Metric report Sensor io_usage
+# TYPE idrac_telemetry_io_usage gauge
+idrac_telemetry_io_usage{context="SystemUsage",fqdd="SystemUsage",metric_report_id="SystemUsage"} 0
+# HELP idrac_telemetry_itue Metric report Sensor itue
+# TYPE idrac_telemetry_itue gauge
+idrac_telemetry_itue{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 1.4
+# HELP idrac_telemetry_lan_unicast_pkt_rx_count Metric report Sensor lan_unicast_pkt_rx_count
+# TYPE idrac_telemetry_lan_unicast_pkt_rx_count counter
+idrac_telemetry_lan_unicast_pkt_rx_count{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_lan_unicast_pkt_rx_count{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_lan_unicast_pkt_tx_count Metric report Sensor lan_unicast_pkt_tx_count
+# TYPE idrac_telemetry_lan_unicast_pkt_tx_count counter
+idrac_telemetry_lan_unicast_pkt_tx_count{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_lan_unicast_pkt_tx_count{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_last_day_avg_power Metric report Sensor last_day_avg_power
+# TYPE idrac_telemetry_last_day_avg_power gauge
+idrac_telemetry_last_day_avg_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 220
+# HELP idrac_telemetry_last_day_max_power Metric report Sensor last_day_max_power
+# TYPE idrac_telemetry_last_day_max_power gauge
+idrac_telemetry_last_day_max_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 437
+# HELP idrac_telemetry_last_day_max_power_time Metric report Sensor last_day_max_power_time
+# TYPE idrac_telemetry_last_day_max_power_time gauge
+idrac_telemetry_last_day_max_power_time{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 1.795003757e+09
+# HELP idrac_telemetry_last_day_min_power Metric report Sensor last_day_min_power
+# TYPE idrac_telemetry_last_day_min_power gauge
+idrac_telemetry_last_day_min_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 215
+# HELP idrac_telemetry_last_day_min_power_time Metric report Sensor last_day_min_power_time
+# TYPE idrac_telemetry_last_day_min_power_time gauge
+idrac_telemetry_last_day_min_power_time{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 1.794981481e+09
+# HELP idrac_telemetry_last_hour_avg_power Metric report Sensor last_hour_avg_power
+# TYPE idrac_telemetry_last_hour_avg_power gauge
+idrac_telemetry_last_hour_avg_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 221
+# HELP idrac_telemetry_last_hour_max_power Metric report Sensor last_hour_max_power
+# TYPE idrac_telemetry_last_hour_max_power gauge
+idrac_telemetry_last_hour_max_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 237
+# HELP idrac_telemetry_last_hour_max_power_time Metric report Sensor last_hour_max_power_time
+# TYPE idrac_telemetry_last_hour_max_power_time gauge
+idrac_telemetry_last_hour_max_power_time{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 1.795033099e+09
+# HELP idrac_telemetry_last_hour_min_power Metric report Sensor last_hour_min_power
+# TYPE idrac_telemetry_last_hour_min_power gauge
+idrac_telemetry_last_hour_min_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 217
+# HELP idrac_telemetry_last_hour_min_power_time Metric report Sensor last_hour_min_power_time
+# TYPE idrac_telemetry_last_hour_min_power_time gauge
+idrac_telemetry_last_hour_min_power_time{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 1.795032777e+09
+# HELP idrac_telemetry_last_minute_avg_power Metric report Sensor last_minute_avg_power
+# TYPE idrac_telemetry_last_minute_avg_power gauge
+idrac_telemetry_last_minute_avg_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 221
+# HELP idrac_telemetry_last_minute_max_power Metric report Sensor last_minute_max_power
+# TYPE idrac_telemetry_last_minute_max_power gauge
+idrac_telemetry_last_minute_max_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 229
+# HELP idrac_telemetry_last_minute_max_power_time Metric report Sensor last_minute_max_power_time
+# TYPE idrac_telemetry_last_minute_max_power_time gauge
+idrac_telemetry_last_minute_max_power_time{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 1.795034971e+09
+# HELP idrac_telemetry_last_minute_min_power Metric report Sensor last_minute_min_power
+# TYPE idrac_telemetry_last_minute_min_power gauge
+idrac_telemetry_last_minute_min_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 217
+# HELP idrac_telemetry_last_minute_min_power_time Metric report Sensor last_minute_min_power_time
+# TYPE idrac_telemetry_last_minute_min_power_time gauge
+idrac_telemetry_last_minute_min_power_time{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 1.795035023e+09
+# HELP idrac_telemetry_last_week_avg_power Metric report Sensor last_week_avg_power
+# TYPE idrac_telemetry_last_week_avg_power gauge
+idrac_telemetry_last_week_avg_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 207
+# HELP idrac_telemetry_last_week_max_power Metric report Sensor last_week_max_power
+# TYPE idrac_telemetry_last_week_max_power gauge
+idrac_telemetry_last_week_max_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 517
+# HELP idrac_telemetry_last_week_max_power_time Metric report Sensor last_week_max_power_time
+# TYPE idrac_telemetry_last_week_max_power_time gauge
+idrac_telemetry_last_week_max_power_time{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 1.794782091e+09
+# HELP idrac_telemetry_last_week_min_power Metric report Sensor last_week_min_power
+# TYPE idrac_telemetry_last_week_min_power gauge
+idrac_telemetry_last_week_min_power{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 138
+# HELP idrac_telemetry_last_week_min_power_time Metric report Sensor last_week_min_power_time
+# TYPE idrac_telemetry_last_week_min_power_time gauge
+idrac_telemetry_last_week_min_power_time{context="PowerStatistics",fqdd="PowerStatistics",metric_report_id="PowerStatistics"} 1.794781327e+09
+# HELP idrac_telemetry_limiting_events_total Metric report Sensor limiting_events
+# TYPE idrac_telemetry_limiting_events_total counter
+idrac_telemetry_limiting_events_total{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_link_status Metric report Sensor link_status
+# TYPE idrac_telemetry_link_status gauge
+idrac_telemetry_link_status{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 1
+idrac_telemetry_link_status{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_link_status{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_link_status{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_media_write_count Metric report Sensor media_write_count
+# TYPE idrac_telemetry_media_write_count counter
+idrac_telemetry_media_write_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 1.8032294405e+10
+idrac_telemetry_media_write_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 1.6160301774e+10
+# HELP idrac_telemetry_memory_spare_block Metric report Sensor memory_spare_block
+# TYPE idrac_telemetry_memory_spare_block gauge
+idrac_telemetry_memory_spare_block{context="DIMM A1",fqdd="DIMM.Socket.A1",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A10",fqdd="DIMM.Socket.A10",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A11",fqdd="DIMM.Socket.A11",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A12",fqdd="DIMM.Socket.A12",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A2",fqdd="DIMM.Socket.A2",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A3",fqdd="DIMM.Socket.A3",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A4",fqdd="DIMM.Socket.A4",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A5",fqdd="DIMM.Socket.A5",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A6",fqdd="DIMM.Socket.A6",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A7",fqdd="DIMM.Socket.A7",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A8",fqdd="DIMM.Socket.A8",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_memory_spare_block{context="DIMM A9",fqdd="DIMM.Socket.A9",metric_report_id="MemoryMetrics"} 0
+# HELP idrac_telemetry_memory_usage Metric report Sensor memory_usage
+# TYPE idrac_telemetry_memory_usage gauge
+idrac_telemetry_memory_usage{context="SystemUsage",fqdd="SystemUsage",metric_report_id="SystemUsage"} 0
+# HELP idrac_telemetry_non_c0_residency_high Metric report Sensor non_c0_residency_high
+# TYPE idrac_telemetry_non_c0_residency_high gauge
+idrac_telemetry_non_c0_residency_high{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_non_c0_residency_low Metric report Sensor non_c0_residency_low
+# TYPE idrac_telemetry_non_c0_residency_low gauge
+idrac_telemetry_non_c0_residency_low{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_os_driver_state Metric report Sensor os_driver_state
+# TYPE idrac_telemetry_os_driver_state gauge
+idrac_telemetry_os_driver_state{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 1
+idrac_telemetry_os_driver_state{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_os_driver_state{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 1
+idrac_telemetry_os_driver_state{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 1
+# HELP idrac_telemetry_partition_link_status Metric report Sensor partition_link_status
+# TYPE idrac_telemetry_partition_link_status gauge
+idrac_telemetry_partition_link_status{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_partition_link_status{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_partition_os_driver_state Metric report Sensor partition_os_driver_state
+# TYPE idrac_telemetry_partition_os_driver_state gauge
+idrac_telemetry_partition_os_driver_state{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 1
+idrac_telemetry_partition_os_driver_state{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 1
+# HELP idrac_telemetry_percent_drive_life_remaining Metric report Sensor percent_drive_life_remaining
+# TYPE idrac_telemetry_percent_drive_life_remaining gauge
+idrac_telemetry_percent_drive_life_remaining{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 100
+idrac_telemetry_percent_drive_life_remaining{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 100
+# HELP idrac_telemetry_pkg_pwr Metric report Sensor pkg_pwr
+# TYPE idrac_telemetry_pkg_pwr gauge
+idrac_telemetry_pkg_pwr{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_pkg_thermal_status Metric report Sensor pkg_thermal_status
+# TYPE idrac_telemetry_pkg_thermal_status gauge
+idrac_telemetry_pkg_thermal_status{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_power_cycle_count Metric report Sensor power_cycle_count
+# TYPE idrac_telemetry_power_cycle_count counter
+idrac_telemetry_power_cycle_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 53
+idrac_telemetry_power_cycle_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 53
+# HELP idrac_telemetry_power_on_hours Metric report Sensor power_on_hours
+# TYPE idrac_telemetry_power_on_hours gauge
+idrac_telemetry_power_on_hours{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 24749
+idrac_telemetry_power_on_hours{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 24749
+# HELP idrac_telemetry_power_to_cool_ratio Metric report Sensor power_to_cool_ratio
+# TYPE idrac_telemetry_power_to_cool_ratio gauge
+idrac_telemetry_power_to_cool_ratio{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 5.4
+# HELP idrac_telemetry_program_fail_count Metric report Sensor program_fail_count
+# TYPE idrac_telemetry_program_fail_count counter
+idrac_telemetry_program_fail_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_program_fail_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_psu_efficiency Metric report Sensor psu_efficiency
+# TYPE idrac_telemetry_psu_efficiency gauge
+idrac_telemetry_psu_efficiency{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 84.199997
+# HELP idrac_telemetry_psu_temperature_reading Metric report ThermalSensor psu_temperature_reading
+# TYPE idrac_telemetry_psu_temperature_reading gauge
+idrac_telemetry_psu_temperature_reading{context="PSU.Slot.1",fqdd="PSU.Slot.1",metric_report_id="PSUMetrics"} 41
+idrac_telemetry_psu_temperature_reading{context="PSU.Slot.2",fqdd="PSU.Slot.2",metric_report_id="PSUMetrics"} 45
+# HELP idrac_telemetry_psurpm_reading Metric report Sensor psurpm_reading
+# TYPE idrac_telemetry_psurpm_reading gauge
+idrac_telemetry_psurpm_reading{context="PSU.Slot.1",fqdd="PSU.Slot.1",metric_report_id="PSUMetrics"} 4000
+idrac_telemetry_psurpm_reading{context="PSU.Slot.2",fqdd="PSU.Slot.2",metric_report_id="PSUMetrics"} 0
+# HELP idrac_telemetry_read_error_rate Metric report Sensor read_error_rate
+# TYPE idrac_telemetry_read_error_rate gauge
+idrac_telemetry_read_error_rate{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_read_error_rate{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_reallocated_block_count Metric report Sensor reallocated_block_count
+# TYPE idrac_telemetry_reallocated_block_count counter
+idrac_telemetry_reallocated_block_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_reallocated_block_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_rpm_reading Metric report Sensor rpm_reading
+# TYPE idrac_telemetry_rpm_reading gauge
+idrac_telemetry_rpm_reading{context="Fan 1A",fqdd="Fan.Embedded.1A",metric_report_id="FanSensor"} 4200
+idrac_telemetry_rpm_reading{context="Fan 1B",fqdd="Fan.Embedded.1B",metric_report_id="FanSensor"} 3720
+idrac_telemetry_rpm_reading{context="Fan 2A",fqdd="Fan.Embedded.2A",metric_report_id="FanSensor"} 4200
+idrac_telemetry_rpm_reading{context="Fan 2B",fqdd="Fan.Embedded.2B",metric_report_id="FanSensor"} 3720
+idrac_telemetry_rpm_reading{context="Fan 3A",fqdd="Fan.Embedded.3A",metric_report_id="FanSensor"} 4200
+idrac_telemetry_rpm_reading{context="Fan 3B",fqdd="Fan.Embedded.3B",metric_report_id="FanSensor"} 3720
+idrac_telemetry_rpm_reading{context="Fan 4A",fqdd="Fan.Embedded.4A",metric_report_id="FanSensor"} 4200
+idrac_telemetry_rpm_reading{context="Fan 4B",fqdd="Fan.Embedded.4B",metric_report_id="FanSensor"} 3840
+idrac_telemetry_rpm_reading{context="Fan 5A",fqdd="Fan.Embedded.5A",metric_report_id="FanSensor"} 4200
+idrac_telemetry_rpm_reading{context="Fan 5B",fqdd="Fan.Embedded.5B",metric_report_id="FanSensor"} 3720
+idrac_telemetry_rpm_reading{context="Fan 6A",fqdd="Fan.Embedded.6A",metric_report_id="FanSensor"} 4200
+idrac_telemetry_rpm_reading{context="Fan 6B",fqdd="Fan.Embedded.6B",metric_report_id="FanSensor"} 3720
+idrac_telemetry_rpm_reading{context="System Board Fan1A",fqdd="Fan.Embedded.1A",metric_report_id="Sensor"} 4200
+idrac_telemetry_rpm_reading{context="System Board Fan1B",fqdd="Fan.Embedded.1B",metric_report_id="Sensor"} 3720
+idrac_telemetry_rpm_reading{context="System Board Fan2A",fqdd="Fan.Embedded.2A",metric_report_id="Sensor"} 4200
+idrac_telemetry_rpm_reading{context="System Board Fan2B",fqdd="Fan.Embedded.2B",metric_report_id="Sensor"} 3720
+idrac_telemetry_rpm_reading{context="System Board Fan3A",fqdd="Fan.Embedded.3A",metric_report_id="Sensor"} 4320
+idrac_telemetry_rpm_reading{context="System Board Fan3B",fqdd="Fan.Embedded.3B",metric_report_id="Sensor"} 3840
+idrac_telemetry_rpm_reading{context="System Board Fan4A",fqdd="Fan.Embedded.4A",metric_report_id="Sensor"} 4200
+idrac_telemetry_rpm_reading{context="System Board Fan4B",fqdd="Fan.Embedded.4B",metric_report_id="Sensor"} 3840
+idrac_telemetry_rpm_reading{context="System Board Fan5A",fqdd="Fan.Embedded.5A",metric_report_id="Sensor"} 4200
+idrac_telemetry_rpm_reading{context="System Board Fan5B",fqdd="Fan.Embedded.5B",metric_report_id="Sensor"} 3840
+idrac_telemetry_rpm_reading{context="System Board Fan6A",fqdd="Fan.Embedded.6A",metric_report_id="Sensor"} 4200
+idrac_telemetry_rpm_reading{context="System Board Fan6B",fqdd="Fan.Embedded.6B",metric_report_id="Sensor"} 3720
+# HELP idrac_telemetry_rx_broadcast_total Metric report Sensor rx_broadcast
+# TYPE idrac_telemetry_rx_broadcast_total counter
+idrac_telemetry_rx_broadcast_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 1.309455e+06
+idrac_telemetry_rx_broadcast_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_broadcast_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_broadcast_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_bytes_total Metric report Sensor rx_bytes
+# TYPE idrac_telemetry_rx_bytes_total counter
+idrac_telemetry_rx_bytes_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 3.1715067497e+10
+idrac_telemetry_rx_bytes_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_bytes_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_bytes_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_error_pkt_alignment_errors_total Metric report Sensor rx_error_pkt_alignment_errors
+# TYPE idrac_telemetry_rx_error_pkt_alignment_errors_total counter
+idrac_telemetry_rx_error_pkt_alignment_errors_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_error_pkt_alignment_errors_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_error_pkt_alignment_errors_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_error_pkt_alignment_errors_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_error_pkt_fcs_errors_total Metric report Sensor rx_error_pkt_fcs_errors
+# TYPE idrac_telemetry_rx_error_pkt_fcs_errors_total counter
+idrac_telemetry_rx_error_pkt_fcs_errors_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_error_pkt_fcs_errors_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_error_pkt_fcs_errors_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_error_pkt_fcs_errors_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_false_carrier_detection_total Metric report Sensor rx_false_carrier_detection
+# TYPE idrac_telemetry_rx_false_carrier_detection_total counter
+idrac_telemetry_rx_false_carrier_detection_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_false_carrier_detection_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_jabber_pkt_total Metric report Sensor rx_jabber_pkt
+# TYPE idrac_telemetry_rx_jabber_pkt_total counter
+idrac_telemetry_rx_jabber_pkt_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_jabber_pkt_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_jabber_pkt_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_jabber_pkt_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_mutlicast_total Metric report Sensor rx_mutlicast
+# TYPE idrac_telemetry_rx_mutlicast_total counter
+idrac_telemetry_rx_mutlicast_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 3.694446e+06
+idrac_telemetry_rx_mutlicast_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_mutlicast_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_mutlicast_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_pause_xoff_frames_total Metric report Sensor rx_pause_xoff_frames
+# TYPE idrac_telemetry_rx_pause_xoff_frames_total counter
+idrac_telemetry_rx_pause_xoff_frames_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_pause_xoff_frames_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_pause_xoff_frames_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_pause_xoff_frames_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_pause_xon_frames_total Metric report Sensor rx_pause_xon_frames
+# TYPE idrac_telemetry_rx_pause_xon_frames_total counter
+idrac_telemetry_rx_pause_xon_frames_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_pause_xon_frames_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_runt_pkt_total Metric report Sensor rx_runt_pkt
+# TYPE idrac_telemetry_rx_runt_pkt_total counter
+idrac_telemetry_rx_runt_pkt_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_runt_pkt_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_runt_pkt_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_runt_pkt_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_rx_unicast_total Metric report Sensor rx_unicast
+# TYPE idrac_telemetry_rx_unicast_total counter
+idrac_telemetry_rx_unicast_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 6.2993e+07
+idrac_telemetry_rx_unicast_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_unicast_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_rx_unicast_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_sys_air_flow_efficiency Metric report Sensor sys_air_flow_efficiency
+# TYPE idrac_telemetry_sys_air_flow_efficiency gauge
+idrac_telemetry_sys_air_flow_efficiency{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 7.2
+# HELP idrac_telemetry_sys_airflow_per_fan_power Metric report Sensor sys_airflow_per_fan_power
+# TYPE idrac_telemetry_sys_airflow_per_fan_power gauge
+idrac_telemetry_sys_airflow_per_fan_power{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 4.7
+# HELP idrac_telemetry_sys_airflow_per_sys_input_power Metric report Sensor sys_airflow_per_sys_input_power
+# TYPE idrac_telemetry_sys_airflow_per_sys_input_power gauge
+idrac_telemetry_sys_airflow_per_sys_input_power{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 253.899994
+# HELP idrac_telemetry_sys_airflow_utilization Metric report Sensor sys_airflow_utilization
+# TYPE idrac_telemetry_sys_airflow_utilization gauge
+idrac_telemetry_sys_airflow_utilization{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 301.299988
+# HELP idrac_telemetry_sys_net_airflow Metric report Sensor sys_net_airflow
+# TYPE idrac_telemetry_sys_net_airflow gauge
+idrac_telemetry_sys_net_airflow{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 56
+# HELP idrac_telemetry_sys_rack_temp_delta Metric report ThermalSensor sys_rack_temp_delta
+# TYPE idrac_telemetry_sys_rack_temp_delta gauge
+idrac_telemetry_sys_rack_temp_delta{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 6
+# HELP idrac_telemetry_system_head_room_instantaneous Metric report Sensor system_head_room_instantaneous
+# TYPE idrac_telemetry_system_head_room_instantaneous gauge
+idrac_telemetry_system_head_room_instantaneous{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 1181
+# HELP idrac_telemetry_system_input_power Metric report Sensor system_input_power
+# TYPE idrac_telemetry_system_input_power gauge
+idrac_telemetry_system_input_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 225
+# HELP idrac_telemetry_system_output_power Metric report Sensor system_output_power
+# TYPE idrac_telemetry_system_output_power gauge
+idrac_telemetry_system_output_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 188
+# HELP idrac_telemetry_system_power_consumption Metric report Sensor system_power_consumption
+# TYPE idrac_telemetry_system_power_consumption gauge
+idrac_telemetry_system_power_consumption{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 219
+# HELP idrac_telemetry_t_ctrl Metric report Sensor t_ctrl
+# TYPE idrac_telemetry_t_ctrl gauge
+idrac_telemetry_t_ctrl{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_temperature_reading Metric report ThermalSensor temperature_reading
+# TYPE idrac_telemetry_temperature_reading gauge
+idrac_telemetry_temperature_reading{context="CPU1 Temp",fqdd="iDRAC.Embedded.1#CPU1Temp",metric_report_id="CPUSensor"} 57
+idrac_telemetry_temperature_reading{context="CPU1 Temp",fqdd="iDRAC.Embedded.1#CPU1Temp",metric_report_id="Sensor"} 57
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A1",fqdd="DIMM.Socket.A1",metric_report_id="MemorySensor"} 32
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A10",fqdd="DIMM.Socket.A10",metric_report_id="MemorySensor"} 29
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A11",fqdd="DIMM.Socket.A11",metric_report_id="MemorySensor"} 25
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A12",fqdd="DIMM.Socket.A12",metric_report_id="MemorySensor"} 28
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A2",fqdd="DIMM.Socket.A2",metric_report_id="MemorySensor"} 31
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A3",fqdd="DIMM.Socket.A3",metric_report_id="MemorySensor"} 28
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A4",fqdd="DIMM.Socket.A4",metric_report_id="MemorySensor"} 29
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A5",fqdd="DIMM.Socket.A5",metric_report_id="MemorySensor"} 28
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A6",fqdd="DIMM.Socket.A6",metric_report_id="MemorySensor"} 29
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A7",fqdd="DIMM.Socket.A7",metric_report_id="MemorySensor"} 26
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A8",fqdd="DIMM.Socket.A8",metric_report_id="MemorySensor"} 29
+idrac_telemetry_temperature_reading{context="DIMM.Socket.A9",fqdd="DIMM.Socket.A9",metric_report_id="MemorySensor"} 27
+idrac_telemetry_temperature_reading{context="Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageSensor"} 27
+idrac_telemetry_temperature_reading{context="Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageSensor"} 26
+idrac_telemetry_temperature_reading{context="Embedded NIC 1 Port 1 Partition 1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICSensor"} 54
+idrac_telemetry_temperature_reading{context="GPU Temp 2",fqdd="iDRAC.Embedded.1#GPUTemp2",metric_report_id="Sensor"} 45
+idrac_telemetry_temperature_reading{context="GPU Temp Sensor.300",fqdd="Video.Slot.2-1#TempSensor.300",metric_report_id="Sensor"} -0.1
+idrac_telemetry_temperature_reading{context="GPU Temp Sensor.301",fqdd="Video.Slot.2-1#TempSensor.301",metric_report_id="Sensor"} 45
+idrac_telemetry_temperature_reading{context="GPU Temp Sensor.765",fqdd="Video.Slot.2-1#TempSensor.765",metric_report_id="Sensor"} 52
+idrac_telemetry_temperature_reading{context="Inlet Temp",fqdd="iDRAC.Embedded.1#InletTemp",metric_report_id="Sensor"} 20
+idrac_telemetry_temperature_reading{context="Inlet Temp",fqdd="iDRAC.Embedded.1#InletTemp",metric_report_id="ThermalSensor"} 20
+idrac_telemetry_temperature_reading{context="Integrated NIC 1 Port 1 Partition 1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICSensor"} 54
+idrac_telemetry_temperature_reading{context="System Board Exhaust Temp",fqdd="iDRAC.Embedded.1#SystemBoardExhaustTemp",metric_report_id="Sensor"} 26
+idrac_telemetry_temperature_reading{context="System Board Exhaust Temp",fqdd="iDRAC.Embedded.1#SystemBoardExhaustTemp",metric_report_id="ThermalSensor"} 26
+# HELP idrac_telemetry_temperature_threshold_alarm Metric report ThermalSensor temperature_threshold_alarm
+# TYPE idrac_telemetry_temperature_threshold_alarm gauge
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A1",fqdd="DIMM.Socket.A1",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A10",fqdd="DIMM.Socket.A10",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A11",fqdd="DIMM.Socket.A11",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A12",fqdd="DIMM.Socket.A12",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A2",fqdd="DIMM.Socket.A2",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A3",fqdd="DIMM.Socket.A3",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A4",fqdd="DIMM.Socket.A4",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A5",fqdd="DIMM.Socket.A5",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A6",fqdd="DIMM.Socket.A6",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A7",fqdd="DIMM.Socket.A7",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A8",fqdd="DIMM.Socket.A8",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_temperature_threshold_alarm{context="DIMM A9",fqdd="DIMM.Socket.A9",metric_report_id="MemoryMetrics"} 0
+# HELP idrac_telemetry_thermal_crtl_circuit_activation Metric report Sensor thermal_crtl_circuit_activation
+# TYPE idrac_telemetry_thermal_crtl_circuit_activation gauge
+idrac_telemetry_thermal_crtl_circuit_activation{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_tj_max Metric report Sensor tj_max
+# TYPE idrac_telemetry_tj_max gauge
+idrac_telemetry_tj_max{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_total_cpu_power Metric report Sensor total_cpu_power
+# TYPE idrac_telemetry_total_cpu_power gauge
+idrac_telemetry_total_cpu_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 79
+idrac_telemetry_total_cpu_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="x86SubsystemPower"} 79
+# HELP idrac_telemetry_total_fan_power Metric report Sensor total_fan_power
+# TYPE idrac_telemetry_total_fan_power gauge
+idrac_telemetry_total_fan_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 12
+idrac_telemetry_total_fan_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="x86SubsystemPower"} 12
+# HELP idrac_telemetry_total_fpga_power Metric report Sensor total_fpga_power
+# TYPE idrac_telemetry_total_fpga_power gauge
+idrac_telemetry_total_fpga_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 41
+# HELP idrac_telemetry_total_memory_power Metric report Sensor total_memory_power
+# TYPE idrac_telemetry_total_memory_power gauge
+idrac_telemetry_total_memory_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 5
+idrac_telemetry_total_memory_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="x86SubsystemPower"} 5
+# HELP idrac_telemetry_total_pcie_power Metric report Sensor total_pcie_power
+# TYPE idrac_telemetry_total_pcie_power gauge
+idrac_telemetry_total_pcie_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 0
+idrac_telemetry_total_pcie_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="x86SubsystemPower"} 0
+# HELP idrac_telemetry_total_psu_heat_dissipation Metric report Sensor total_psu_heat_dissipation
+# TYPE idrac_telemetry_total_psu_heat_dissipation gauge
+idrac_telemetry_total_psu_heat_dissipation{context="Thermal",fqdd="Thermal",metric_report_id="ThermalMetrics"} 35
+# HELP idrac_telemetry_total_storage_power Metric report Sensor total_storage_power
+# TYPE idrac_telemetry_total_storage_power gauge
+idrac_telemetry_total_storage_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="PowerMetrics"} 13.6
+idrac_telemetry_total_storage_power{context="PowerMetrics",fqdd="PowerMetrics",metric_report_id="x86SubsystemPower"} 14.1
+# HELP idrac_telemetry_tx_broadcast_total Metric report Sensor tx_broadcast
+# TYPE idrac_telemetry_tx_broadcast_total counter
+idrac_telemetry_tx_broadcast_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 36
+idrac_telemetry_tx_broadcast_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_broadcast_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_broadcast_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_tx_bytes_total Metric report Sensor tx_bytes
+# TYPE idrac_telemetry_tx_bytes_total counter
+idrac_telemetry_tx_bytes_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 6.188182779e+09
+idrac_telemetry_tx_bytes_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_bytes_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_bytes_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_tx_error_pkt_excessive_collision_total Metric report Sensor tx_error_pkt_excessive_collision
+# TYPE idrac_telemetry_tx_error_pkt_excessive_collision_total counter
+idrac_telemetry_tx_error_pkt_excessive_collision_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_excessive_collision_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_excessive_collision_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_excessive_collision_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_tx_error_pkt_late_collision_total Metric report Sensor tx_error_pkt_late_collision
+# TYPE idrac_telemetry_tx_error_pkt_late_collision_total counter
+idrac_telemetry_tx_error_pkt_late_collision_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_late_collision_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_late_collision_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_late_collision_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_tx_error_pkt_multiple_collision_total Metric report Sensor tx_error_pkt_multiple_collision
+# TYPE idrac_telemetry_tx_error_pkt_multiple_collision_total counter
+idrac_telemetry_tx_error_pkt_multiple_collision_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_multiple_collision_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_multiple_collision_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_multiple_collision_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_tx_error_pkt_single_collision_total Metric report Sensor tx_error_pkt_single_collision
+# TYPE idrac_telemetry_tx_error_pkt_single_collision_total counter
+idrac_telemetry_tx_error_pkt_single_collision_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_single_collision_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_single_collision_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_error_pkt_single_collision_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_tx_mutlicast_total Metric report Sensor tx_mutlicast
+# TYPE idrac_telemetry_tx_mutlicast_total counter
+idrac_telemetry_tx_mutlicast_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 2032
+idrac_telemetry_tx_mutlicast_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_mutlicast_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_mutlicast_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_tx_pause_xoff_frames_total Metric report Sensor tx_pause_xoff_frames
+# TYPE idrac_telemetry_tx_pause_xoff_frames_total counter
+idrac_telemetry_tx_pause_xoff_frames_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_pause_xoff_frames_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_pause_xoff_frames_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_pause_xoff_frames_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_tx_pause_xon_frames_total Metric report Sensor tx_pause_xon_frames
+# TYPE idrac_telemetry_tx_pause_xon_frames_total counter
+idrac_telemetry_tx_pause_xon_frames_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_pause_xon_frames_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_tx_unicast_total Metric report Sensor tx_unicast
+# TYPE idrac_telemetry_tx_unicast_total counter
+idrac_telemetry_tx_unicast_total{context="NIC.Embedded.1-1-1",fqdd="NIC.Embedded.1-1-1",metric_report_id="NICStatistics"} 3.9922293e+07
+idrac_telemetry_tx_unicast_total{context="NIC.Embedded.2-1-1",fqdd="NIC.Embedded.2-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_unicast_total{context="NIC.Integrated.1-1-1",fqdd="NIC.Integrated.1-1-1",metric_report_id="NICStatistics"} 0
+idrac_telemetry_tx_unicast_total{context="NIC.Integrated.1-2-1",fqdd="NIC.Integrated.1-2-1",metric_report_id="NICStatistics"} 0
+# HELP idrac_telemetry_uncore_clocks_high Metric report Sensor uncore_clocks_high
+# TYPE idrac_telemetry_uncore_clocks_high gauge
+idrac_telemetry_uncore_clocks_high{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_uncore_clocks_low Metric report Sensor uncore_clocks_low
+# TYPE idrac_telemetry_uncore_clocks_low gauge
+idrac_telemetry_uncore_clocks_low{context="CPU.Socket.1",fqdd="CPU.Socket.1",metric_report_id="CPUMemMetrics"} 0
+# HELP idrac_telemetry_uncorrectable_ecc_error_total Metric report Sensor uncorrectable_ecc_error
+# TYPE idrac_telemetry_uncorrectable_ecc_error_total counter
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A1",fqdd="DIMM.Socket.A1",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A10",fqdd="DIMM.Socket.A10",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A11",fqdd="DIMM.Socket.A11",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A12",fqdd="DIMM.Socket.A12",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A2",fqdd="DIMM.Socket.A2",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A3",fqdd="DIMM.Socket.A3",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A4",fqdd="DIMM.Socket.A4",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A5",fqdd="DIMM.Socket.A5",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A6",fqdd="DIMM.Socket.A6",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A7",fqdd="DIMM.Socket.A7",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A8",fqdd="DIMM.Socket.A8",metric_report_id="MemoryMetrics"} 0
+idrac_telemetry_uncorrectable_ecc_error_total{context="DIMM A9",fqdd="DIMM.Socket.A9",metric_report_id="MemoryMetrics"} 0
+# HELP idrac_telemetry_uncorrectable_error_count Metric report Sensor uncorrectable_error_count
+# TYPE idrac_telemetry_uncorrectable_error_count counter
+idrac_telemetry_uncorrectable_error_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_uncorrectable_error_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_uncorrectable_lba_count Metric report Sensor uncorrectable_lba_count
+# TYPE idrac_telemetry_uncorrectable_lba_count counter
+idrac_telemetry_uncorrectable_lba_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_uncorrectable_lba_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_unused_reserved_block_count Metric report Sensor unused_reserved_block_count
+# TYPE idrac_telemetry_unused_reserved_block_count counter
+idrac_telemetry_unused_reserved_block_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 7403
+idrac_telemetry_unused_reserved_block_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 7403
+# HELP idrac_telemetry_used_reserved_block_count Metric report Sensor used_reserved_block_count
+# TYPE idrac_telemetry_used_reserved_block_count counter
+idrac_telemetry_used_reserved_block_count{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_used_reserved_block_count{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_volatile_memory_backup_source_failures Metric report Sensor volatile_memory_backup_source_failures
+# TYPE idrac_telemetry_volatile_memory_backup_source_failures gauge
+idrac_telemetry_volatile_memory_backup_source_failures{context="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+idrac_telemetry_volatile_memory_backup_source_failures{context="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",fqdd="SMARTData:Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.1-1",metric_report_id="StorageDiskSMARTData"} 0
+# HELP idrac_telemetry_voltage_reading Metric report Sensor voltage_reading
+# TYPE idrac_telemetry_voltage_reading gauge
+idrac_telemetry_voltage_reading{context="CPU1 HV VR",fqdd="iDRAC.Embedded.1#CPU1HVVR",metric_report_id="Sensor"} 0.4
+idrac_telemetry_voltage_reading{context="CPU1 VCCIN VR",fqdd="iDRAC.Embedded.1#CPU1VCCINVR",metric_report_id="Sensor"} 0.41
+idrac_telemetry_voltage_reading{context="CPU1 VDDIO VR",fqdd="iDRAC.Embedded.1#CPU1VDDIOVR",metric_report_id="Sensor"} 0.56
+idrac_telemetry_voltage_reading{context="PS1 Voltage 1",fqdd="iDRAC.Embedded.1#PS1Voltage",metric_report_id="Sensor"} 204
+idrac_telemetry_voltage_reading{context="PS2 Voltage 2",fqdd="iDRAC.Embedded.1#PS2Voltage",metric_report_id="Sensor"} 204
+# HELP idrac_telemetry_watts_reading Metric report Sensor watts_reading
+# TYPE idrac_telemetry_watts_reading gauge
+idrac_telemetry_watts_reading{context="GPU Power Sensor.6",fqdd="Video.Slot.2-1#PowerSensor.6",metric_report_id="Sensor"} 41
+idrac_telemetry_watts_reading{context="System Board Pwr Consumption",fqdd="iDRAC.Embedded.1#SystemBoardPwrConsumption",metric_report_id="Sensor"} 208
