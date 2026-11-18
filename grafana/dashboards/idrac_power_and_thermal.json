@@ -401,7 +401,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -523,7 +523,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -621,7 +621,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -719,7 +719,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -817,7 +817,7 @@
               "type": "linear"
             },
             "showPoints": "never",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "normal"
@@ -963,7 +963,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -1073,7 +1073,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -1194,7 +1194,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -1351,7 +1351,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -1462,7 +1462,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -1531,7 +1531,7 @@
         "type": "prometheus",
         "uid": "${datasource}"
       },
-      "description": "Inlet air temperatures - critical for ASHRAE thermal guideline compliance.",
+      "description": "Inlet and exhaust air temperatures plus the delta between them - inlet is critical for ASHRAE thermal guideline compliance.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1560,7 +1560,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -1590,7 +1590,39 @@
           },
           "unit": "celsius"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byFrameRefID",
+              "options": "C"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "purple",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "custom.lineStyle",
+                "value": {
+                  "dash": [
+                    10,
+                    10
+                  ],
+                  "fill": "dash"
+                }
+              },
+              {
+                "id": "custom.thresholdsStyle",
+                "value": {
+                  "mode": "off"
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -1623,8 +1655,8 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "idrac_telemetry_system_avg_inlet_temp_hour{instance=~\"$instance\", job=~\"$job\"}",
-          "legendFormat": "{{instance}} avg inlet (hour)",
+          "expr": "idrac_telemetry_temperature_reading{context=\"Inlet Temp\", metric_report_id=\"ThermalSensor\", instance=~\"$instance\", job=~\"$job\"}",
+          "legendFormat": "{{instance}} inlet",
           "range": true,
           "refId": "A"
         },
@@ -1635,13 +1667,25 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "idrac_telemetry_system_max_inlet_temp_hour{instance=~\"$instance\", job=~\"$job\"}",
-          "legendFormat": "{{instance}} max inlet (hour)",
+          "expr": "idrac_telemetry_temperature_reading{context=\"System Board Exhaust Temp\", metric_report_id=\"ThermalSensor\", instance=~\"$instance\", job=~\"$job\"}",
+          "legendFormat": "{{instance}} exhaust",
           "range": true,
           "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${datasource}"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "idrac_telemetry_temperature_reading{context=\"System Board Exhaust Temp\", metric_report_id=\"ThermalSensor\", instance=~\"$instance\", job=~\"$job\"} - idrac_telemetry_temperature_reading{context=\"Inlet Temp\", metric_report_id=\"ThermalSensor\", instance=~\"$instance\", job=~\"$job\"}",
+          "legendFormat": "{{instance}} delta (exhaust - inlet)",
+          "range": true,
+          "refId": "C"
         }
       ],
-      "title": "Inlet Air Temperature",
+      "title": "Inlet / Exhaust Air Temperature",
       "type": "timeseries"
     },
     {
@@ -1678,7 +1722,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -1788,7 +1832,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -1898,7 +1942,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
@@ -2020,7 +2064,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": false,
+            "spanNulls": true,
             "stacking": {
               "group": "A",
               "mode": "none"
